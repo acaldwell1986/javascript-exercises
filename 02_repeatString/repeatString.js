@@ -1,4 +1,22 @@
-const repeatString = function() {
+const repeatString = function(stringVal, repeatNum) {
+   
+   
+    let returnString = '';
+
+     if (repeatNum >= 0) {               
+        while (repeatNum > 0) {
+            returnString += stringVal;
+            repeatNum--;
+        }
+
+        return returnString;
+    }
+    else {
+        return "ERROR"
+    }
+        
+    
+    
 
 };
 
