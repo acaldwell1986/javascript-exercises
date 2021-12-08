@@ -2,7 +2,6 @@ const sumAll = function(start, end) {
   let sum = 1;
   if (start <= 0){
     return 'ERROR';
-
   }
   else if (Number.isInteger(end)) {
     if (start > end) {
