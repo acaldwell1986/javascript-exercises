@@ -25,18 +25,16 @@ const multiply = function(array) {
   return sum;
 };
 
- console.log(multiply([2,4,6,8,10,12,14]));
-
 
 const power = function(a,b) {
   const num = a;
-	for (let i = 0; i < b; i++) {
+	for (let i = 1; i < b; i++) {
     a *= num;
+    
   }
   return a;
 };
 
-//10
 
 const factorial = function(num) {
   if (num === 0 || num === 1) {
