@@ -41,12 +41,12 @@ const factorial = function(num) {
 }
 
 
-// Do not edit below this line
-// module.exports = {
-//   add,
-//   subtract,
-//   sum,
-//   multiply,
-//   power,
-//   factorial
-// };
+//Do not edit below this line
+module.exports = {
+  add,
+  subtract,
+  sum,
+  multiply,
+  power,
+  factorial
+};
