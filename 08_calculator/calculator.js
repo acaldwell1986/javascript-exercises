@@ -9,7 +9,6 @@ const subtract = function(a,b) {
 const sum = function(array) {
   let sum = 0;
 	for (let element of array) {
-    
     sum += element;
   }
   return sum;
@@ -25,6 +24,11 @@ const multiply = function(array) {
   return sum;
 };
 
+<<<<<<< HEAD
+=======
+ 
+
+>>>>>>> bc27776d05a264125e5d0c5d92826ae1e5c65fd6
 
 const power = function(a,b) {
   const num = a;
@@ -47,12 +51,12 @@ const factorial = function(num) {
 }
 
 
-// //Do not edit below this line
-// module.exports = {
-//   add,
-//   subtract,
-//   sum,
-//   multiply,
-//   power,
-//   factorial
-// };
+// Do not edit below this line
+module.exports = {
+  add,
+  subtract,
+  sum,
+  multiply,
+  power,
+  factorial
+};
