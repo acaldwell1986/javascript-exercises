@@ -16,9 +16,17 @@ const sum = function(array) {
 };
 
 
-const multiply = function(a,b) {
-  return a * b;
+const multiply = function(array) {
+  console.log(typeof array)
+  let sum = 1; 
+  for (let element of array) {
+    sum *= element;
+  }
+  return sum;
 };
+
+ console.log(multiply([2,4,6,8,10,12,14]));
+
 
 const power = function(a,b) {
   const num = a;
@@ -41,12 +49,12 @@ const factorial = function(num) {
 }
 
 
-//Do not edit below this line
-module.exports = {
-  add,
-  subtract,
-  sum,
-  multiply,
-  power,
-  factorial
-};
+// //Do not edit below this line
+// module.exports = {
+//   add,
+//   subtract,
+//   sum,
+//   multiply,
+//   power,
+//   factorial
+// };
