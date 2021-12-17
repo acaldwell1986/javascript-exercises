@@ -9,7 +9,6 @@ const subtract = function(a,b) {
 const sum = function(array) {
   let sum = 0;
 	for (let element of array) {
-    
     sum += element;
   }
   return sum;
