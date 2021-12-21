@@ -15,7 +15,7 @@ const people = [
       yearOfDeath: 1941,
     },
   ]
-
+//function returns the sum of all birth years right now
 const findTheOldest = function(args) {
    return args.reduce((total, person) => {
        return total + (person.yearOfBirth);
