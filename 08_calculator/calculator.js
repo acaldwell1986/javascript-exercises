@@ -24,7 +24,6 @@ const multiply = function(array) {
   return sum;
 };
 
-
 const power = function(a,b) {
   const num = a;
 	for (let i = 1; i < b; i++) {
