@@ -15,10 +15,10 @@ const palindromes = function (args) {
     console.log(palinCheck);
     
     if (palinCheck === reversedString) {
-        return 1;
+        return true;
     }
     else {
-        return -1;
+        return false;
     }
 };
 
