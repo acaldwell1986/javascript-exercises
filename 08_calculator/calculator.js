@@ -24,11 +24,6 @@ const multiply = function(array) {
   return sum;
 };
 
-<<<<<<< HEAD
-=======
- 
-
->>>>>>> bc27776d05a264125e5d0c5d92826ae1e5c65fd6
 
 const power = function(a,b) {
   const num = a;
