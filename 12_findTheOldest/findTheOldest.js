@@ -2,7 +2,7 @@ const people = [
     {
       name: "Carly",
       yearOfBirth: 1942,
-      yearOfDeath: 1970,
+      
     },
     {
       name: "Ray",
@@ -15,48 +15,36 @@ const people = [
       yearOfDeath: 1941,
     },
   ]
-//function returns the sum of all birth years right now
-// const findTheOldest = function(array) {
-//   return array.reduce((oldest, currentPerson) => {
-//     const oldestAge = oldest.yearOfDeath - oldest.yearOfBirth
-//     console.log("oldest: " + oldestAge);
-//     const currentAge = currentPerson.yearOfDeath - currentPerson.yearOfBirth
-//     console.log("current: " + currentAge);
-//     return oldestAge < currentAge ? currentPerson : oldest
-//   })
-// };
 
 
-
-
-
-function findTheOldest(array) {
-  let oldestTempA = 0;
-  let oldestTempB = 0;
-  let oldestTempC = 0;
-  for (let i = array.length - 1; i > 0; i--) {
-      console.log(i)
-      
-      oldestTempA = array[i].yearOfDeath - array[i].yearOfBirth;
-      oldestTempB = array[i-1].yearOfDeath - array[i-1].yearOfBirth;
-      console.log(oldestTempB)
-      
-      
-
-    
-  }
-};
-
-
-
-const getAge = function(birth, death) {
-  if (!death) {
-    death = new Date().getFullYear();
-  }
-  return death - birth;
-};
+const findTheOldest = function(args) {
+  args.forEach(element => {
+    if (typeof element.yearOfDeath === 'undefined') {
+      let date = new Date();
+      let year = date.getFullYear();
+      element.age = year - element.yearOfBirth;
+    }
+    else {
+      element.age = element.yearOfDeath - element.yearOfBirth;
+    }
+  });
+  
+  people.sort(function (a,b) {
+    return b.age - a.age;
+  });
+  return args[0];
+}
 
 console.log(findTheOldest(people));
 
+
+
+// Add age property.
+// Loop thru 
+//if death date exists = calculate and add age to property for each name in array
+//else create variable for today's date and subtract birth date from today's date to get age.
+// Sort array by age and return oldest value
+
+
 // Do not edit below this line
-//module.exports = findTheOldest;
+module.exports = findTheOldest;
