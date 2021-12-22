@@ -1,21 +1,3 @@
-const people = [
-    {
-      name: "Carly",
-      yearOfBirth: 1942,
-      
-    },
-    {
-      name: "Ray",
-      yearOfBirth: 1962,
-      yearOfDeath: 2011,
-    },
-    {
-      name: "Jane",
-      yearOfBirth: 1912,
-      yearOfDeath: 1941,
-    },
-  ]
-
 
 const findTheOldest = function(args) {
   args.forEach(element => {
@@ -29,13 +11,13 @@ const findTheOldest = function(args) {
     }
   });
   
-  people.sort(function (a,b) {
+  args.sort(function (a,b) {
     return b.age - a.age;
   });
   return args[0];
 }
 
-console.log(findTheOldest(people));
+
 
 
 
